@@ -1203,7 +1203,7 @@ article {
 
 .service-page .service-parts .block {
   margin-bottom: 40px;
-  text-align: center;
+  text-align: left;
 }
 
 .service-page .service-parts .block i {
@@ -1216,6 +1216,10 @@ article {
   font-size: 14px;
   color: #777;
   line-height: 1.7;
+}
+
+.service-page .service-root {
+  padding: 40px 0;
 }
 
 #team {
