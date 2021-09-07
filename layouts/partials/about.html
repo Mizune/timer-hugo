@@ -3,16 +3,22 @@
 <section id="about">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6">
-				<div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
-					{{ with .Site.Params.about.title }}<h2>{{ . }}</h2>{{ end }}
+			<div class="col-sm-12">
+				<div class="block wow fadeInLeft text-center" data-wow-delay=".3s" data-wow-duration="500ms">
 					{{ with .Site.Params.about.content }}<p>{{ . | safeHTML }}</p>{{ end }}
 				</div>
 			</div>
-			<div class="col-sm-6">
-				<div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-					{{ with .Site.Params.about.image }}<img src="{{ . | absURL }}" alt="about-image">{{ end }}
+			<div class="col-sm-12">
+				<div class="block wow fadeInLeft text-center" data-wow-delay=".3s" data-wow-duration="500ms">
+					{{ with .Site.Params.about.description }}<p>{{ . | safeHTML }}</p>{{ end }}
 				</div>
+			</div>
+			<div class="col-sm-12 text-center">
+				{{ if .Site.Params.banner.btn }}
+				<a class="btn btn-default btn-contact wow fadeInDown dark light wow fadeInUp animated btn btn-default btn-green hvr-bounce-to-right text-center"
+				  data-wow-delay=".9s" href="{{ .Site.Params.banner.btnURL }}"
+				  target="_blank">{{ .Site.Params.banner.btnText }}</a>
+				{{ end }}
 			</div>
 		</div>
 	</div>

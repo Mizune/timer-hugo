@@ -2,7 +2,7 @@
 <section class="global-page-header">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-12" id="page-title" style='background-image: url("{{ .Site.BaseURL }}images/{{(index (readDir "/public/images/covers" | shuffle | first 1) 0).Name }}");'>
+      <div class="col-md-12" id="page-title" style='background-image: url("{{ .Site.BaseURL }}images/covers/{{(index (readDir "/static/images/covers" | shuffle | first 1) 0).Name }}");'>
         <div class="block">
           <h2>{{ .Title }}</h2>
         </div>
@@ -13,7 +13,7 @@
 <style>
 #page-title {
   padding: 100px;
-  background-size: 100%;
+  background-size: cover;
 }
 </style>
 {{"<!-- Global Page Section End -->" | safeHTML }}
