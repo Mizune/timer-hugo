@@ -2,7 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Glegoo);
 
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -1439,8 +1438,6 @@ ul.social-icons li {
   background: #fff;
 }
 
-
-
 /*# sourceMappingURL=maps/style.css.map */
 
 @media (max-width: 991px) {
@@ -1485,7 +1482,6 @@ ul.social-icons li {
     text-align: center;
     padding: 10px;
     margin: 15px auto!important;
-  
   }
   
   .col-lg-12.subtitle p{
@@ -1495,8 +1491,4 @@ ul.social-icons li {
   .col-lg-4.img {
     display: none!important;
   }
-
-
 }
-
-
