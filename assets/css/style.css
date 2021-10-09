@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Glegoo);
 
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -136,9 +137,8 @@ a:hover {
 .global-page-header {
   background-attachment: fixed;
   background-size: cover;
-  padding: 120px 0 25px 0;
+  padding: 90px 0 25px 0;
   position: relative;
-  background: #02bdd5;
   color: #fff;
 }
 
@@ -1219,7 +1219,7 @@ article {
 }
 
 .service-page .service-root {
-  padding: 40px 0;
+  padding: 0;
 }
 
 #team {
@@ -1329,4 +1329,174 @@ ul.social-icons li {
   text-decoration: none;
 }
 
+.row.service-parts {
+  margin: 50px auto!important;
+}
+
+.service-table-title {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0px;
+
+}
+.service-table {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.service-flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.service-item01 {
+  width: 40%;
+  background: #5b83d5;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-item02 {
+  width: 60%;
+  background: #f5f5f5;
+  text-align: center;
+  padding: 5px;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-info {
+  display: block;
+  font-size: 80%;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.cta-submit {
+  position: relative;
+  background: #ff9743;
+  border: 1px solid #ff9743;
+  border-radius: 5px;
+  color: #FFFFFF;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  margin: 15px auto;
+  transition: all .3s;
+
+}
+
+.cta-submit a {
+	position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width: 100%;
+	font-size: 200px!important;
+
+}
+
+.cta-submit:hover{
+	display: block!important;
+	background-color: #ffffff;
+  color: #ff9743;
+}
+
+.service-title {
+  display: inline-block!important;
+  font-size: 25px;
+  width: 90%;
+}
+
+.contact-cta {
+  background: #02bdd5;
+  border: 2px solid #02bdd5;
+  color: #fff;
+  padding: 15px 34px;
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: all linear .2s;
+}
+
+.contact-cta i {
+  margin-right: 10px;
+}
+
+.contact-cta:hover {
+  color: #02bdd5;
+  background: #fff;
+}
+
+
+
 /*# sourceMappingURL=maps/style.css.map */
+
+@media (max-width: 991px) {
+
+  .service-table {
+    width: 100%!important;
+    margin: 0 auto;
+    font-size: 90%;
+  }
+    
+  .service-item01 {
+    width: 100%!important;
+    background: #5b83d5;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    margin: 1px;
+  }
+  
+  .service-item02 {
+    width: 100%!important;
+    display: block!important;
+    background: #f5f5f5;
+    text-align: center;
+    padding: 5px;
+    margin: 1px;
+  }
+  
+  .service-info {
+    display: block;
+    font-size: 80%;
+    width: 60%!important;
+    margin: 0 15%!important;
+  }
+ 
+  .cta-submit {
+    background: #ff9743;
+    border: 1px solid #ff9743;
+    border-radius: 5px;
+    color: #FFFFFF;
+    width: 80%!important;
+    text-align: center;
+    padding: 10px;
+    margin: 15px auto!important;
+  
+  }
+  
+  .col-lg-12.subtitle p{
+    text-align: left!important;
+  }
+  
+  .col-lg-4.img {
+    display: none!important;
+  }
+
+
+}
+
+
