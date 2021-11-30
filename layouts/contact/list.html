@@ -15,35 +15,38 @@
           {{ with .Site.Data.contact.contactFormSubtitle }}<p class="subtitle-des wow fadeInDown"
             data-wow-duration="500ms" data-wow-delay=".5s">{{ . }}</p>{{ end }}
           <div class="contact-form">
-            <form method="POST" action="{{ .Site.Params.contactFormAction }}">
+            <form name="contact" method="post" netlify>
 
               <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".4s">
-                <input type="text" placeholder="会社名・ショップ名" class="form-control" name="name" id="name">
+                <input type="text" placeholder="会社名・ショップ名・チーム名" class="form-control" name="entry.470637176" id="name" autocomplete="organization" required>
               </div>
 
               <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
-                <input type="text" placeholder="お名前" class="form-control" name="name" id="name">
+                <input type="text" placeholder="お名前" class="form-control" name="entry.1735119935" id="name" autocomplete="name" required>
               </div>
 
               <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
-                <input type="email" placeholder="メールアドレス" class="form-control" name="email" id="email">
+                <input type="tel" placeholder="電話番号" class="form-control" name="entry.166676220" id="tel" autocomplete="tel" required>
               </div>
 
               <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
-                <select type="text" placeholder="ご相談の種類" class="form-control" name="subject" id="subject">
-                  <option value="red">ご相談の種類</option>
-                  <option value="red">webサイトの作成について</option>
-                  <option value="blue">SNS運用代行について</option>
-                  <option value="yellow">広告運用について</option> 
-                  <option value="yellow">その他</option>
+                <input type="email" placeholder="メールアドレス" class="form-control" name="entry.205229051" id="email" autocomplete="email" required>
+              </div>
+
+              <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
+                <select type="text" placeholder="ご相談の種類" class="form-control" name="entry.676363727" id="subject" required>
+                  <option value="1637218497880">ご相談の種類</option>
+                  <option value="1637218518424">Webページ作成について</option>
+                  <option value="1637218531240">SNS運用について</option>
+                  <option value="1637218544079">Web広告について</option> 
                   </select> 
                 </div>
 
-              <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
-                <textarea rows="6" placeholder="ご相談内容" class="form-control" name="message" id="message"></textarea>
+              <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
+                <textarea rows="6" placeholder="ご相談内容" class="form-control" name="entry.676363727" id="message" required></textarea>
               </div>
 
-              <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
+              <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.6s">
                 <button type="submit" id="contact-submit" class="btn btn-default btn-send hvr-bounce-to-right"
                   value="Send Message"> 送 信 </button>
               </div>
@@ -53,34 +56,6 @@
       </div>
       <div class="col-md-2 mb-5 mb-md-0"></div>
     </div>
-    <!-- <div class="row address-details">
-      <div class="col-lg-3 col-sm-6">
-        <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".3s">
-          <i class="ion-ios-location-outline"></i>
-          {{ with .Site.Data.contact.officeAddress1 }}<h5>{{ . }}</h5>{{ end }}
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
-          <i class="ion-ios-location-outline"></i>
-          {{ with .Site.Data.contact.officeAddress2 }}<h5>{{ . }}</h5>{{ end }}
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="email wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".7s">
-          <i class="ion-ios-email-outline"></i>
-          <p>{{ with .Site.Data.contact.mail1 }}{{ . }}{{ end }}
-            <br>{{ with .Site.Data.contact.mail2 }}{{ . }}{{ end }}</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="phone wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
-          <i class="ion-ios-telephone-outline"></i>
-          <p>{{ with .Site.Data.contact.phone1 }}{{ . }}{{ end }}
-            <br>{{ with .Site.Data.contact.phone2 }}{{ . }}{{ end }}</p>
-        </div>
-      </div>
-    </div> -->
   </div>
 </section>
 {{ "<!-- Contact Section End -->" | safeHTML }}
