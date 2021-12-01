@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ if .Site.Data.contact.enable }}
+{{ "<!-- Contact Section Start -->" | safeHTML }}
+<section id="contact-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 mb-5 mb-md-0"></div>
+        <div class="col-md-8 mb-5 mb-md-0">
+        <div class="block">
+          <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms"
+            data-wow-delay=".3s">お問い合わせありがとうございます</h2>
+          <p class="subtitle-des wow fadeInDown"
+            data-wow-duration="500ms" data-wow-delay=".5s">内容を確認のうえ、担当者より折り返しご連絡いたします。<br>2営業日経っても返信がない場合、正常に送信されていない可能性がございます。<br>お手数ですが再度お問い合わせいただきますようお願いいたします。</p>
+        </div>
+      </div>
+      <div class="col-md-2 mb-5 mb-md-0"></div>
+    </div>
+  </div>
+</section>
+{{ "<!-- Contact Section End -->" | safeHTML }}
+{{ end }}
+
+
+{{ end }}
